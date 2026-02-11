@@ -1,0 +1,115 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 1.5rem 4rem;
+  background: linear-gradient(165deg, #f0fdfa 0%, #f8fafc 45%, #e0f2fe 100%);
+}
+
+.hero__inner {
+  max-width: 720px;
+  text-align: center;
+}
+
+.hero__name {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero__tagline {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.hero__role {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero__cursor {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 300;
+  margin-left: 2px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.hero__bio {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin: 0 0 2rem;
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-line;
+}
+
+.hero__social {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  color: var(--text);
+  font-size: 1.35rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero__social-link:hover,
+.hero__social-link:focus-visible {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  transform: scale(1.08);
+  box-shadow: var(--shadow-md);
+  outline: none;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.hero__btn:hover,
+.hero__btn:focus-visible {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(13, 148, 136, 0.35);
+  outline: none;
+}
+

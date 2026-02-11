@@ -1,0 +1,8 @@
+.optimized-img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.optimized-img--loaded {
+  opacity: 1;
+}
