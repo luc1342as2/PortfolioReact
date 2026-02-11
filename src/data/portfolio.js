@@ -193,6 +193,13 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/CinemaVisits/',
     skills: ['HTML', 'CSS', 'JavaScript'],
   },
+  {
+    name: 'Paint Request 🎨',
+    image: `${BASE}images/project-paint-request.png`,
+    github: 'https://github.com/luc1342as2/Paint_Request',
+    demo: 'https://luc1342as2.github.io/Paint_Request/',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+  },
 ];
 
 const web3formsKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_WEB3FORMS_ACCESS_KEY;
