@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { navLinks } from '../data/portfolio';
 import './Header.css';
 
@@ -10,7 +11,7 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
-      const sections = navLinks.map(({ id }) => document.getElementById(id)).filter(Boolean);
+      const sections = navLinks.filter((l) => l.id !== 'blog').map(({ id }) => document.getElementById(id)).filter(Boolean);
       const scrollY = window.scrollY;
       let current = 'home';
       for (const section of sections) {
@@ -50,13 +51,23 @@ export default function Header() {
         <ul className={`header__links ${menuOpen ? 'header__links--open' : ''}`}>
           {navLinks.map(({ id, label }) => (
             <li key={id}>
-              <a
-                href={`#${id}`}
-                className={activeId === id ? 'header__link header__link--active' : 'header__link'}
-                onClick={(e) => handleNavClick(e, id)}
-              >
-                {label}
-              </a>
+              {id === 'blog' ? (
+                <Link
+                  to="/blog"
+                  className="header__link"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <a
+                  href={`#${id}`}
+                  className={activeId === id ? 'header__link header__link--active' : 'header__link'}
+                  onClick={(e) => handleNavClick(e, id)}
+                >
+                  {label}
+                </a>
+              )}
             </li>
           ))}
         </ul>

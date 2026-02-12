@@ -13,12 +13,10 @@ export default function Skills() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Defer so the 0% state paints before the fill animation runs
           requestAnimationFrame(() => {
             requestAnimationFrame(() => setIsInView(true));
           });
         } else {
-          // Reset bars when user scrolls away so they refill on return
           setIsInView(false);
         }
       },
@@ -38,13 +36,16 @@ export default function Skills() {
           <div className="skills__group">
             <h3 className="skills__group-title">Front-end</h3>
             <ul className="skills__list">
-              {skills.frontend.map(({ name, level }) => (
+              {skills.frontend.map(({ name, level }, index) => (
                 <li key={name} className="skills__item">
                   <span className="skills__name">{name}</span>
                   <div className="skills__bar-wrap">
                     <div
                       className="skills__bar"
-                      style={{ width: isInView ? `${level}%` : '0%' }}
+                      style={{
+                        width: isInView ? `${level}%` : '0%',
+                        transitionDelay: `${index * 0.15}s`,
+                      }}
                       aria-label={`${name}: ${level}%`}
                     />
                   </div>
@@ -55,13 +56,16 @@ export default function Skills() {
           <div className="skills__group">
             <h3 className="skills__group-title">Back-end & tools</h3>
             <ul className="skills__list">
-              {skills.backend.map(({ name, level }) => (
+              {skills.backend.map(({ name, level }, index) => (
                 <li key={name} className="skills__item">
                   <span className="skills__name">{name}</span>
                   <div className="skills__bar-wrap">
                     <div
                       className="skills__bar"
-                      style={{ width: isInView ? `${level}%` : '0%' }}
+                      style={{
+                        width: isInView ? `${level}%` : '0%',
+                        transitionDelay: `${index * 0.15}s`,
+                      }}
                       aria-label={`${name}: ${level}%`}
                     />
                   </div>
