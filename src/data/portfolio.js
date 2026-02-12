@@ -177,7 +177,7 @@ export const projects = [
     demo: `${BASE}images/GoFish-Game.mp4`,
     skills: ['Java', 'JavaFX', 'OOP'],
     description: 'A classic card game built with JavaFX. I learned to design clean game logic and manage state across multiple players.',
-    year: 2024,
+    year: 2023,
   },
   {
     name: 'Italian Quiz 🇮🇹❓',
@@ -186,7 +186,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/quiz/',
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'An interactive quiz to test Italian vocabulary. Solves the need for a fun, accessible way to practice language skills.',
-    year: 2023,
+    year: 2022,
   },
   {
     name: 'Zombie Infestation 🧟‍♂️',
@@ -195,7 +195,7 @@ export const projects = [
     demo: `${BASE}images/zombie.mp4`,
     skills: ['C#', 'Game logic'],
     description: 'A survival game built in C#. Sharpened my understanding of game loops, collision detection, and player mechanics.',
-    year: 2024,
+    year: 2023,
   },
   {
     name: 'Pizzeria / Restaurant 🍕',
@@ -249,7 +249,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/to-do-list/',
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'A task manager with add, complete, and delete. Reinforced CRUD patterns and local storage for persistence.',
-    year: 2023,
+    year: 2022,
   },
   {
     name: 'Track Expenses 💸📊',
@@ -258,7 +258,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/expensesTracker/',
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'Track income and expenses with visual summaries. Helped me practice data manipulation and chart rendering.',
-    year: 2023,
+    year: 2022,
   },
   {
     name: 'PLC Website ⚙️',
@@ -267,7 +267,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/PLCWebsite/',
     skills: ['React.js', 'Vite', 'PLC Roadmap'],
     description: 'A learning roadmap for PLC programming. Combines my automation background with web development to help others start.',
-    year: 2024,
+    year: 2023,
   },
   {
     name: 'Cinema History 🎬',
@@ -276,7 +276,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/CinemaVisits/',
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'A personal cinema history tracker. Explored form handling and data persistence with local storage.',
-    year: 2023,
+    year: 2024,
   },
   {
     name: 'Paint Request 🎨',
@@ -285,7 +285,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/Paint_Request/',
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'A paint request form for tracking orders. Practical project for form design and validation.',
-    year: 2023,
+    year: 2022,
   },
 ];
 

@@ -68,6 +68,7 @@ export default function BlogPage() {
         <div className="blog-page__header-content container">
           <h1 className="blog-page__title">Blog</h1>
           <p className="blog-page__subtitle">Thoughts on PLC, cybersecurity, web development, and career growth</p>
+          <p className="blog-page__excerpt">Real lessons from my first months in industrial automation. Unique, personal, and current.</p>
         </div>
       </header>
 
