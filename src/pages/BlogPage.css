@@ -31,7 +31,7 @@
   width: 44px;
   height: 44px;
   padding: 0;
-  margin-left: auto;
+  margin: 0 auto;
   background: none;
   border: none;
   border-radius: 8px;
@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 768px) {
+  .blog-page__nav {
+    justify-content: center;
+  }
+
   .blog-page__menu-btn {
     display: flex;
   }
