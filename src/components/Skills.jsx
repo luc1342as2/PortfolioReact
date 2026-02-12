@@ -28,7 +28,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="skills" ref={sectionRef}>
+    <section id="skills" className={`skills ${isInView ? 'skills--in-view' : ''}`} ref={sectionRef}>
       <div className="skills__inner container">
         <h2 className="section-title section-title--center">My <span>Skills</span></h2>
         <p className="section-subtitle">Front-end and back-end technologies I work with</p>
@@ -44,7 +44,7 @@ export default function Skills() {
                       className="skills__bar"
                       style={{
                         width: isInView ? `${level}%` : '0%',
-                        transitionDelay: `${index * 0.15}s`,
+                        transitionDelay: `${index * 0.12}s`,
                       }}
                       aria-label={`${name}: ${level}%`}
                     />
@@ -64,7 +64,7 @@ export default function Skills() {
                       className="skills__bar"
                       style={{
                         width: isInView ? `${level}%` : '0%',
-                        transitionDelay: `${index * 0.15}s`,
+                        transitionDelay: `${index * 0.12}s`,
                       }}
                       aria-label={`${name}: ${level}%`}
                     />

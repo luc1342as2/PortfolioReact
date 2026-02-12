@@ -81,7 +81,23 @@
   padding: 0.6rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   gap: 0.35rem;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
+.skills--in-view .skills__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger: each line loads one at a time, both groups animated in parallel */
+.skills--in-view .skills__group .skills__item:nth-child(1) { transition-delay: 0s; }
+.skills--in-view .skills__group .skills__item:nth-child(2) { transition-delay: 0.12s; }
+.skills--in-view .skills__group .skills__item:nth-child(3) { transition-delay: 0.24s; }
+.skills--in-view .skills__group .skills__item:nth-child(4) { transition-delay: 0.36s; }
+.skills--in-view .skills__group .skills__item:nth-child(5) { transition-delay: 0.48s; }
+.skills--in-view .skills__group .skills__item:nth-child(6) { transition-delay: 0.6s; }
 
 .skills__item:last-child {
   border-bottom: none;
@@ -121,6 +137,17 @@
 @media (prefers-reduced-motion: reduce) {
   .skills__bar {
     transition-duration: 4s !important;
+  }
+
+  .skills__item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .skills .skills__item {
+    opacity: 1;
+    transform: none;
   }
 }
 
