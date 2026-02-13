@@ -279,15 +279,6 @@ export const projects = [
     year: 2025,
   },
   {
-    name: 'Cinema History 🎬',
-    image: `${BASE}images/project-cinema-history.png`,
-    github: 'https://github.com/luc1342as2/CinemaVisits',
-    demo: 'https://luc1342as2.github.io/CinemaVisits/',
-    skills: ['HTML', 'CSS', 'JavaScript'],
-    description: 'A personal cinema history tracker. Explored form handling and data persistence with local storage.',
-    year: 2024,
-  },
-  {
     name: 'Paint Request 🎨',
     image: `${BASE}images/project-paint-request.png`,
     github: 'https://github.com/luc1342as2/Paint_Request',
