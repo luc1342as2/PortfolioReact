@@ -222,7 +222,7 @@ export const projects = [
     name: 'CrazyView 🎬',
     image: `${BASE}images/project-crazyview.png`,
     github: 'https://github.com/luc1342as2/CrazyView',
-    demo: 'https://luc1342as2.github.io/',
+    demo: 'https://luc1342as2.github.io/CrazyView/',
     skills: ['React.js', 'Vite', 'CSS'],
     description: 'A full-featured Netflix clone built with React.js that recreates the look and feel of a modern streaming platform interface.',
     year: 2025,
