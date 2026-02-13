@@ -177,7 +177,7 @@ export const projects = [
     demo: `${BASE}images/GoFish-Game.mp4`,
     skills: ['Java', 'JavaFX', 'OOP'],
     description: 'A classic card game built with JavaFX. I learned to design clean game logic and manage state across multiple players.',
-    year: 2023,
+    year: 2025,
   },
   {
     name: 'Italian Quiz 🇮🇹❓',
@@ -276,7 +276,7 @@ export const projects = [
     demo: 'https://luc1342as2.github.io/PLCWebsite/',
     skills: ['React.js', 'Vite', 'PLC Roadmap'],
     description: 'A learning roadmap for PLC programming. Combines my automation background with web development to help others start.',
-    year: 2023,
+    year: 2025,
   },
   {
     name: 'Cinema History 🎬',
