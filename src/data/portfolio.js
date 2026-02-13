@@ -219,6 +219,18 @@ export const projects = [
     year: 2023,
   },
   {
+    name: 'CrazyView 🎬',
+    image: `${BASE}images/project-crazyview.png`,
+    github: 'https://github.com/luc1342as2/CrazyView',
+    demo: 'https://luc1342as2.github.io/',
+    skills: ['React.js', 'Vite', 'CSS'],
+    description: 'A full-featured Netflix clone built with React.js that recreates the look and feel of a modern streaming platform interface.',
+    year: 2025,
+    featured: true,
+    featuredDescription: 'A Netflix clone with landing page, sign-in/sign-up forms, plan and payment flow, profile selection, and responsive content browse UI. Demonstrates key user flows and common UI patterns seen in real-world streaming apps.',
+    challenges: 'Recreating the Netflix experience required careful attention to layout, responsive design, and user flow. Balancing authenticity with clean, maintainable React components was a key focus. Implementing the plan selection and profile picker flows involved thoughtful state management.',
+  },
+  {
     name: 'Password Generator 🔐',
     image: `${BASE}images/project-password-generator.png`,
     github: 'https://github.com/luc1342as2/RandomPasswordGenerator',
@@ -226,9 +238,6 @@ export const projects = [
     skills: ['HTML', 'CSS', 'JavaScript'],
     description: 'Generates secure random passwords with customizable length and character types.',
     year: 2023,
-    featured: true,
-    featuredDescription: 'A password generator that allows users to choose length, include uppercase, lowercase, numbers, and symbols, and copy the result with one click. Addresses the common need for strong, unique passwords without memorizing complex combinations.',
-    challenges: 'Ensuring true randomness and avoiding bias toward certain characters was important. I used cryptographically secure randomness where available and validated that each character set contributed fairly. Building a clear, accessible UI for non-technical users was also a focus.',
   },
   {
     name: 'Car Rental 🚗',

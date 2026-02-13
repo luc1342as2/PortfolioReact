@@ -46,7 +46,7 @@ export default function Projects() {
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-card__btn">
                         Code
                       </a>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-card__btn project-card__btn--primary">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-card__btn">
                         Demo
                       </a>
                     </div>
@@ -83,7 +83,7 @@ export default function Projects() {
                   <a href={github} target="_blank" rel="noopener noreferrer" className="project-card__btn">
                     Code
                   </a>
-                  <a href={demo} target="_blank" rel="noopener noreferrer" className="project-card__btn project-card__btn--primary">
+                  <a href={demo} target="_blank" rel="noopener noreferrer" className="project-card__btn">
                     Demo
                   </a>
                 </div>
