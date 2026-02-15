@@ -57,27 +57,6 @@ export const about = {
         ],
         skills: ['Industrial automation', 'Electrical systems', 'Commissioning', 'Troubleshooting', 'Safety compliance', 'Production line systems'],
       },
-      {
-        role: 'Sales Representative',
-        company: 'TRACE PPC',
-        location: 'Toronto, Ontario, Canada',
-        period: 'November 2023 – May 2024',
-        bullets: [
-          'Developed strong customer engagement skills and managed sales leads effectively.',
-          'Maintained detailed records and adhered to high standards of customer interaction.',
-        ],
-        skills: ['Customer engagement', 'Sales leads', 'Record keeping', 'Client communication'],
-      },
-      {
-        role: 'Customer Service Representative',
-        company: 'TRACE PPC',
-        location: 'Toronto, Ontario, Canada',
-        period: 'March 2023 – July 2023',
-        bullets: [
-          'Handled high volumes of customer interactions with attention to accuracy and professionalism.',
-        ],
-        skills: ['Customer service', 'Accuracy', 'Professional communication'],
-      },
     ],
   },
   education: {
